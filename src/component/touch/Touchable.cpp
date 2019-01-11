@@ -79,9 +79,9 @@ Touchable* Touchable::setMargin(int width, int height)
 void Touchable::addTouchable(cocos2d::CCNode* node)
 {
 #ifndef DEBUG
-	for (auto& element : _touchables)
+	for (auto element : _touchables)
 	{
-		assert(element.get() != node && "Touchable already added!");
+		assert(element != node && "Touchable already added!");
 	}
 #endif
 
