@@ -124,7 +124,7 @@ namespace Dexode
 
                 if (touchable->getParent() == nullptr) // maybe it is a root!
                 {
-                    touchBox.origin = touchable->convertToWorldSpace({});
+                    touchBox.origin = touchable->convertToWorldSpace(CCPoint{});
                 }
                 else
                 {
